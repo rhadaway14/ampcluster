@@ -16,7 +16,7 @@ export default function Launch() {
             <Signin>
                 <Signin.Card>
                     <Signin.Title>Launch Cluster</Signin.Title>
-                    <Signin.Button onClick={() => fetch('https://r4761bgkfa.execute-api.us-west-1.amazonaws.com/dev', {headers: header})}/>
+                    <Signin.Button onClick={() => fetch('https://9gozbzgseh.execute-api.us-west-1.amazonaws.com/dev')}/>
                 </Signin.Card>
             </Signin>
         </>
