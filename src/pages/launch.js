@@ -14,7 +14,7 @@ export default function Launch() {
             <Signin>
                 <Signin.Card>
                     <Signin.Title>Launch Cluster</Signin.Title>
-                    <Signin.Button onClick={() => fetch('https://r4761bgkfa.execute-api.us-west-1.amazonaws.com/dev', {mode: 'no-cors'})}/>
+                    <Signin.Button onClick={() => fetch('https://r4761bgkfa.execute-api.us-west-1.amazonaws.com/dev', {mode: 'cors'})}/>
                 </Signin.Card>
             </Signin>
         </>
