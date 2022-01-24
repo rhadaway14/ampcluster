@@ -4,6 +4,7 @@ import Signin from '../components/signin/index'
 
 
 export default function Launch() {
+    const [sty, setsty] = useState('white')
 
     const header = new Headers;
             header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
@@ -11,12 +12,14 @@ export default function Launch() {
     function get(){
         console.log('please')
     }
+
+    
     return (
         <>
             <Signin>
                 <Signin.Card>
                     <Signin.Title>Launch Cluster</Signin.Title>
-                    <Signin.Button onClick={() => fetch('https://9gozbzgseh.execute-api.us-west-1.amazonaws.com/dev')}/>
+                    <Signin.Button style={{color: sty}} onClick={() => fetch('https://9gozbzgseh.execute-api.us-west-1.amazonaws.com/dev').then(setsty('red'))}/>
                 </Signin.Card>
             </Signin>
         </>
