@@ -20,7 +20,7 @@ export default function Launch() {
             {"name": name}
         );
 
-        fetch('https://akiw41s995.execute-api.us-west-1.amazonaws.com/proto', {
+        fetch('https://8h1o293xm3.execute-api.us-west-1.amazonaws.com/proto', {
             method: "POST",
             body: jbody,
             headers: header
@@ -29,7 +29,7 @@ export default function Launch() {
         .then(setName(''))
         .then(setsty('white'))
     }
-
+//trouble with post
     return (
         <>
             <Signin>
