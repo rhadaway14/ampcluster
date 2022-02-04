@@ -15,9 +15,12 @@ Signin.Card = function SigninForm({ children, ...restProps}) {
     return <Card {...restProps}>{children}</Card>
 }
 
+Signin.Input = function SigninInput({children, ...restProps}) {
+    return <Name {...restProps}>{children}</Name>
+}
 
 Signin.Button = function SigninButton({onClick, children, ...restProps} ) {
     return (
-        <Button onClick={onClick} {...restProps}>3... 2...1... Launch!</Button>
+        <Button onClick={onClick} {...restProps}>Launch</Button>
     )   
 }
