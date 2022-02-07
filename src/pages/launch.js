@@ -13,7 +13,7 @@ export default function Launch() {
 
     function addName() {
         const header = new Headers()
-        header.append('Content-type','application/json')
+        header.append('Content-type','application/x-www-form-urlencoded')
         header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
 
         let jbody = JSON.stringify(
