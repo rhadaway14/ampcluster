@@ -7,14 +7,14 @@ import Signin from '../components/signin/index'
 export default function Launch() {
     const [sty, setsty] = useState('white')
     const [name, setName] = useState('')
-    const header = new Headers;
-            header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
+    // const header = new Headers;
+            // header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
 
 
     function addName() {
         const header = new Headers()
         header.append('Content-type','application/x-www-form-urlencoded')
-        header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
+        // header.append('Access-Control-Allow-Origin', 'https://master.d28iptyfs5v9n5.amplifyapp.com/')
 
         let jbody = JSON.stringify(
             {"name": name}
